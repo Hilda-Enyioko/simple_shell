@@ -18,8 +18,6 @@ srand(time(NULL));
 randomNumber = rand();
 randomNumber %= 11;
 
-printf("%d\n", randomNumber);
-
 printf("Welcome to my Guessing Game!\n");
 printf("Guess a number between 0-10: ");
 scanf("%d", &guessedNumber);

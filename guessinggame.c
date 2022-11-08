@@ -10,26 +10,25 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
-  int randomNumber, guessedNumber;
+int randomNumber, guessedNumber;
   
-  srand(time(NULL));
-  randomNumber = rand();
-  randomNumber %= 11;
+srand(time(NULL));
+randomNumber = rand();
+randomNumber %= 11;
   
-  printf("%d\n", randomNumber);
+printf("%d\n", randomNumber);
 
-  printf("Welcome to my Guessing Game!\n");
-  printf("Guess a number between 0-10: ");
-  scanf("%d", &guessedNumber);
+printf("Welcome to my Guessing Game!\n");
+printf("Guess a number between 0-10: ");
+scanf("%d", &guessedNumber);
 
-  if (guessedNumber == randomNumber)
-    printf("Yay! You Win\n");
-  else
-    {
-      printf("Sorry, You Lose\n");
-    }
-  
-  return (0);
+if (guessedNumber == randomNumber)
+printf("Yay! You Win\n");
+else
+{
+printf("Sorry, You Lose\n");
+}
+return (0);
 }
